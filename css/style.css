@@ -1,0 +1,387 @@
+/* index html */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@300;400&display=swap');
+
+:root {
+  --primary-color: #0d6efd;
+  --secondary-color: #0a58ca;
+  --dark-color: #212529;
+  --light-color: #f8f9fa;
+  --text-color: #333333;
+  --white: #ffffff;
+
+  --font-title: 'Poppins', sans-serif;
+  --font-text: 'Roboto', sans-serif;
+
+  --spacing: 1rem;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: var(--font-text);
+  background-color: var(--light-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+#photo{
+    background-image: url(../afri.jpeg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+   background-repeat: no-repeat;
+   display: flex;
+   align-items: center;
+}
+
+
+h1, h2, h3, h4 {
+  font-family: var(--font-title);
+}
+
+
+.navbar {
+  padding: var(--spacing);
+}
+
+.navbar img {
+  border-radius: 8px;
+}
+
+.navbar-nav .nav-link {
+  margin-left: 15px;
+  font-weight: 500;
+  color: var(--white) ;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--secondary-color);
+}
+
+#photo {
+  padding: 60px 0;
+  text-align: center;
+}
+
+
+#photo a {
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+#photo button {
+  background-color: var(--dark-color);
+  color: var(--white);
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+}
+
+
+#service {
+  padding: 50px 0;
+  text-align: center;
+}
+
+#service img {
+  margin: 10px 0;
+}
+
+#statistique {
+  padding: 50px 0;
+  background-color: var(--white);
+  text-align: center;
+}
+
+#temoignage {
+  padding: 50px 0;
+  text-align: center;
+}
+
+#temoignage img {
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+blockquote {
+  font-style: italic;
+  font-size: 14px;
+}
+
+
+form {
+  background-color: var(--white);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+footer {
+  background-color: var(--dark-color);
+  color: var(--white);
+}
+
+/* =======================
+   Freelances
+======================= */
+section.text-center {
+  padding: 40px 0;
+}
+
+section.text-center h1 {
+  font-family: var(--font-title);
+  font-size: 2.5rem;
+}
+.card {
+  border: none;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.card img {
+  height: 250px;
+  object-fit: cover;
+}
+.card-body h4 {
+  font-family: var(--font-title);
+  margin-top: 10px;
+}
+
+.card-body p {
+  margin: 5px 0;
+}
+.card .btn {
+  background-color: var(--primary-color);
+  border: none;
+}
+
+.card .btn:hover {
+  background-color: var(--secondary-color);
+}
+#photo {
+  padding: 60px 0;
+  text-align: center;
+}
+footer {
+  background-color: var(--dark-color);
+  color: var(--white);
+  text-align: center;
+}
+
+/* =======================
+   Abouts
+======================= */
+
+
+#photo {
+  padding: 60px 0;
+  text-align: center;
+  background-color: var(--light-color);
+}
+
+#photo h2 {
+  font-size: 2rem;
+  font-family: var(--font-title);
+}
+
+#photo p {
+  margin-top: 10px;
+}
+section.container.my-5 {
+  padding: 30px 0;
+}
+
+section.container.my-5 p {
+  line-height: 1.7;
+}
+img.rounded-circle {
+  border: 3px solid var(--primary-color);
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-family: var(--font-title);
+}
+section h2 {
+  font-family: var(--font-title);
+}
+
+section .col-md-4 {
+  margin-bottom: 20px;
+}
+
+section .col-md-4 h5 {
+  margin-bottom: 10px;
+}
+.btn-primary {
+  background-color: var(--primary-color);
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: var(--secondary-color);
+}
+footer {
+  background-color: var(--dark-color);
+  color: var(--white);
+}
+
+footer ul li {
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+footer ul li:hover {
+  color: var(--secondary-color);
+}
+
+
+/* =======================
+   tarifs
+======================= */
+
+section.text-center {
+  padding: 40px 0;
+}
+
+section.text-center h1 {
+  font-family: var(--font-title);
+}
+.card {
+  border: none;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.card h3 {
+  font-family: var(--font-title);
+}
+
+.card h2 {
+  margin: 10px 0;
+}
+.card .btn {
+  background-color: var(--primary-color);
+  border: none;
+}
+
+.card .btn:hover {
+  background-color: var(--secondary-color);
+}
+section.container h4 {
+  font-family: var(--font-title);
+  margin-bottom: 20px;
+}
+
+section.container p {
+  line-height: 1.6;
+}
+form {
+  background-color: var(--white);
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+form label {
+  font-weight: 500;
+}
+footer {
+  background-color: var(--dark-color);
+  color: var(--white);
+}
+
+footer ul li {
+  margin: 5px 0;
+}
+
+footer ul li:hover {
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+
+/* =======================
+   contact
+======================= */
+
+section h1 {
+  font-family: var(--font-title);
+}
+
+section p {
+  font-size: 16px;
+}
+.card {
+  border: none;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.card-body h4 {
+  font-family: var(--font-title);
+}
+form {
+  background-color: var(--white);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+form label {
+  font-weight: 500;
+}
+
+form input,
+form textarea {
+  border-radius: 5px;
+}
+.btn-primary {
+  background-color: var(--primary-color);
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: var(--secondary-color);
+}
+.fst-italic {
+  font-style: italic;
+  margin-bottom: 5px;
+}
+
+hr {
+  margin: 15px 0;
+}
+.btn-outline-primary {
+  margin: 5px;
+  border-radius: 20px;
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+footer {
+  background-color: var(--dark-color);
+  color: var(--white);
+}
