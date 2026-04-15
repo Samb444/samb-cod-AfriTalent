@@ -36,7 +36,9 @@ rel="stylesheet">
 
   </div>
 </nav>
-<section id="photo"></section>
+<section id="photo">
+</section>
+<section>
     <div class="container">
         <h2 class=" fw-bold display-5 mb-3 text-center py-2 ">
             La plateforme qui connecte les talents africains aux opportunités du monde
@@ -53,7 +55,7 @@ rel="stylesheet">
 <section id="service">
     <div class="container py-3">
         <h2 class="text-center text-dark fs-1 fw-bold mb-4">Nos domaine d'expertise</h2>
-        <div class="row">
+        <div class="row text-center">
          <div class="col-md-4">
         <h3 class="fs-4 ">Developpement web</h3>
         <img src="deve web.jpeg" alt="developpement web" width="150px">
@@ -71,6 +73,31 @@ rel="stylesheet">
         </div>
     </div>
 </section>
+ 
+<!--bento gird-->
+<section class="container my-5">
+    <h2 class="text-center fw-bold mb-4">Comment ca marche</h2>
+    <div class="bento-grid text-white fw-bold">
+        <div class="bento-item">
+            <h4>Créer un compte</h4>
+            <p>Inscrivez-vous gratuitement</p>
+        </div>
+
+        <div class="bento-item">
+            <h4>Choisir un freelances</h4>
+            <p>Sélectionnez un talent adapté</p>
+        </div>
+
+        <div class="bento-item">
+            <h4>Lancer le projet</h4>
+            <p>Collaborez facilement</p>
+        </div>
+
+    </div>
+</section>
+
+
+
 <section id="statistique">
     <div class="container py-4">
         <h2 class="text-center fw-bold mb-4 fs-1 text-dark">AfriTalent en chiffres</h2>
@@ -90,12 +117,44 @@ rel="stylesheet">
         </div>
     </div>
 </section>
+
+<!-- CATEGORIES (HOVER) -->
+<section class="container my-5 text-center">
+
+  <h2 class="fw-bold mb-4 ">Catégories de services</h2>
+
+  <div class="row">
+    <div class="col-md-4 text-white">
+      <div class="category-card">
+        <h4>Développement Web</h4>
+      </div>
+    </div>
+
+    <div class="col-md-4 text-white">
+      <div class="category-card">
+        <h4>Design Graphique</h4>
+      </div>
+    </div>
+
+    <div class="col-md-4 ">
+      <div class="category-card ">
+        <h4 class="text-white">Marketing Digital</h4>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<!--carsousel-!-->
+
 <section id="temoignage">
     <div class="container py-4">
         <h2 class="text-center fs-1 fw-bold mb-4 text-dark">Ce que disent nos clients</h2>
-        <div class="row">
-            <div class="col-md-4">
-                <img src="client1.jpeg" alt="client1" width="100px">
+        <div id="carsouselExample" class="carsousel slide" data-bs-ride="carsousel">
+            <div id="carsousel-inner text-center">
+                <div class="carsousel-item active">
+                <img src="client1.jpeg" alt="client1" width="100px" class="rounded-circle">
                 <h4 class="fst-italic">Ndaye Ndiaye</h4>
                 <p class="fw-bold">Développeur Web</p>
                 <p>⭐⭐⭐⭐⭐</p>
@@ -104,8 +163,8 @@ rel="stylesheet">
                      clients et amélioré mes compétences"
                 </blockquote>
         </div>
-        <div class="col-md-4">
-            <img src="client2.jpeg" alt="client2" width="100px">
+        <div id="carsousel-item">
+            <img src="client2.jpeg" alt="client2" width="100px" class="rounded-circle">
             <h4 class="fst-italic">Clara Mendy</h4>
             <p class="fw-bold">Directrice Marketing</p>
             <p>⭐⭐⭐⭐⭐</p>
@@ -113,15 +172,16 @@ rel="stylesheet">
                 "Platforme trés utile pour les freelances en Afrique"
             </blockquote>
         </div>
-        <div class="col-md-4">
-            <img src="client3.jpeg" alt="client3" width="100px">
+        <div id="carsousel-item">
+            <img src="client3.jpeg" alt="client3" width="100px" class="rounded-circle">
             <h4 class="fst-italic">Fama Ndiaye</h4>
             <p class="fw-bold">gestionaire</p>
             <p>⭐⭐⭐⭐⭐</p>
             <blockquote>
                 "Service trés professionnel, je recommande fortement"
             </blockquote>
-        </div>
+          </div>
+      </div>
     </div>
 </section>
 <section>

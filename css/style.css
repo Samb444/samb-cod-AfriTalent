@@ -15,13 +15,11 @@
   --spacing: 1rem;
 }
 
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 
 body {
   font-family: var(--font-text);
@@ -128,9 +126,7 @@ footer {
   color: var(--white);
 }
 
-/* =======================
-   Freelances
-======================= */
+/* Freelances*/
 section.text-center {
   padding: 40px 0;
 }
@@ -143,11 +139,13 @@ section.text-center h1 {
   border: none;
   border-radius: 10px;
   transition: 0.3s ease;
+  
 }
 
 .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  background: #0d6efd;
 }
 
 .card img {
@@ -180,9 +178,7 @@ footer {
   text-align: center;
 }
 
-/* =======================
-   Abouts
-======================= */
+/* Abouts */
 
 
 #photo {
@@ -248,9 +244,7 @@ footer ul li:hover {
 }
 
 
-/* =======================
-   tarifs
-======================= */
+/* tarifs */
 
 section.text-center {
   padding: 40px 0;
@@ -268,6 +262,7 @@ section.text-center h1 {
 .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  background: wheat;
 }
 
 .card h3 {
@@ -317,9 +312,7 @@ footer ul li:hover {
   cursor: pointer;
 }
 
-/* =======================
-   contact
-======================= */
+/* contact*/
 
 section h1 {
   font-family: var(--font-title);
@@ -384,4 +377,40 @@ hr {
 footer {
   background-color: var(--dark-color);
   color: var(--white);
+}
+
+/*  bento Grid */
+
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.bento-item {
+  background: blue;
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.bento-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  background: wheat;
+}
+
+.category-card {
+  background: blue;
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+
+
+}
+
+.category-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  background: wheat;
 }
