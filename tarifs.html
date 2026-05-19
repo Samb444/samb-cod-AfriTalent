@@ -31,6 +31,9 @@ rel="stylesheet">
         <li class="nav-item"><a class="nav-link" href="tarifs.html">Tarifs</a></li>
         <li class="nav-item"><a class="nav-link" href="about.html">À propos</a></li>
         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+       <a href="index.html" class="btn btn primary bg-dark text-white p-1 rounded">
+      Réjoindre AfriTalent
+    </a>
       </ul>
     </div>
 
@@ -45,8 +48,8 @@ rel="stylesheet">
             Trouvez les meilleurs freelances africains pour vos projets et développez votre entreprise
         </p>
         <div class="text-center">
-             <a href="freelances.html " class="bg-primary text-white p-2 rounded text-decoration-none me-3">  Decouvrir nos talent</a> 
-             <button class="text-white bg-dark p-1 rounded">S'inscrire</button>
+             <a href="freelances.html " class="bg-primary text-white p-2 rounded text-decoration-none me-3">Je suis Freelance</a> 
+             <button class="text-white bg-dark p-1 rounded">Je chercha un Freelance</button>
 
         </div>
         
@@ -59,9 +62,9 @@ rel="stylesheet">
 </section>
 <div class="container">
     <div class="row text-center">
-        <div class="col-md-4 mb-4">
+        <div class="col-md-4 mb-4 col-12 col-lg-4 ">
             <div class="card p-4">
-                <h3>Gratuit</h3>
+                <h3 class="fw-bold">Gratuit</h3>
                 <h2 class="text-primary">00 F CFA</h2>
                 <ul class="list-unstyled">
                     <li> Accès limité</li>
@@ -71,9 +74,9 @@ rel="stylesheet">
                 <a href="tarifs.html" class="btn p-1 rounded btn-primary">Choisir</a>
             </div>
         </div>
-        <div class="col-md-4 mb-4">
+        <div class="col-md-4 mb-4 col-12 col-lg-4 ">
             <div class="card p-4 border-primary">
-                <h3>PRO</h3>
+                <h3 class="fw-bold">PRO</h3>
                 <h2 class="text-primary">100000 FCFA</h2>
                 <ul class="list-unstyled">
                     <li> Profil avancé</li>
@@ -83,9 +86,9 @@ rel="stylesheet">
                 <a href="tarifs.html" class="btn p-1 rounded btn-primary ">Choisir</a>
             </div>
         </div>
-        <div class="col-md-4 mb-4">
+        <div class="col-md-4 mb-4 col-12 col-lg-4">
             <div class="card p-4">
-                <h3>Entreprise</h3>
+                <h3 class="fw-bold">Entreprise</h3>
                 <h2 class="text-primary">200000 FCFA</h2>
                 <ul class="list-unstyled">
                     <li> Visibilité maximale</li>
@@ -97,43 +100,107 @@ rel="stylesheet">
         </div>
     </div>
 </div>
-<section  class="container">
-    <div class="row text-center">
-        <h4 class="text-center fw-bold fs-3">Sommaire</h4>
-        <div>
-            <a href="tarifs.html" class="text-center fw-bold text-dark ">1 - Le prix d'un site internet varie selon de sa typologie</a>
-            <p>
-                Le cout d'un site internet varie d'un concept à l'autre . Un site marchand sera plus onéraux <br>
-                qu'un site vitrine car il mobilise plus de fonctionnalités et d'etapes de création
-            </p>
-             <button class=" p-1 rounded btn btn-primary">En savoir plus</button>
-        </div>
-        <div>
-            <a href="tarifs.html" class="fw-bold text-dark"> 2 - Le prix d'un site depend du périmetre choisi</a>
-            <p>
-                Le cout d'un site internetbvarie s'il nécessite l'apport d'un graphiste, d'un consultant <br>
-                en marketing ou d'un rédacteur web. Respirez un bon coup, et lisez ce qui suit. Vous allezz <br>
-                peu plus la main au portefeuille que prevu
-            </p>
-            <button class=" p-1 rounded btn btn-primary">En savoir plus</button>
-        </div>
-    </div>
-    <div>
-    <form>
-    <div class="mb-3">
-        <label for="nom" class="form-label">Nom</label>
-        <input type="text" id="nom" class="form-control" placeholder="Votre nom">
-    </div>
+    <div class="container py-5">
+    <h1 class="text-center mb-4">SOMMAIRE</h1>
+    <p class="text-center text-muted mb-5">
+      Consultez nos tarifs selon le service dont vous avez besoin.
+    </p>
 
-    <div class="mb-3">
-        <label for="email" class="form-label">E-mail</label>
-        <input type="email" id="email" class="form-control" placeholder="Votre email">
+    <div class="accordion" id="tarifsAccordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#web">
+            1. Combien coûte un site web ?
+          </button>
+        </h2>
+        <div id="web" class="accordion-collapse collapse show" data-bs-parent="#tarifsAccordion">
+          <div class="accordion-body">
+            <strong>Site vitrine :</strong> 50 000 à 150 000 FCFA<br>
+            <strong>Site e-commerce :</strong> 200 000 à 500 000 FCFA<br>
+            <strong>Site sur mesure :</strong> Sur devis
+          </div>
+        </div>
+      </div>
+     <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mobile">
+            2. Quel est le tarif pour une application mobile ?
+          </button>
+        </h2>
+        <div id="mobile" class="accordion-collapse collapse" data-bs-parent="#tarifsAccordion">
+          <div class="accordion-body">
+            <strong>Application simple :</strong> 100 000 à 300 000 FCFA<br>
+            <strong>Application avancée :</strong> 300 000 FCFA et plus
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#design">
+            3. Combien coûte un logo ou un design graphique ?
+          </button>
+        </h2>
+        <div id="design" class="accordion-collapse collapse" data-bs-parent="#tarifsAccordion">
+          <div class="accordion-body">
+            <strong>Logo simple :</strong> 10 000 à 25 000 FCFA<br>
+             <strong>Affiche/Flyer :</strong> 5 000 à 15 000 FCFA<br>
+            <strong>Pack identité visuelle :</strong> 30 000 FCFA et plus
+          </div>
+        </div>
+      </div>
+        <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#uiux">
+            4. Quel est le prix d’un design UI/UX ?
+          </button>
+        </h2>
+        <div id="uiux" class="accordion-collapse collapse" data-bs-parent="#tarifsAccordion">
+          <div class="accordion-body">
+            <strong>Maquette d’une page :</strong> 15 000 à 30 000 FCFA<br>
+            <strong>Prototype complet :</strong> 50 000 FCFA et plus
+          </div>
+        </div>
+      </div>
+        <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#community">
+            5. Combien coûte le community management ?
+          </button>
+        </h2>
+        <div id="community" class="accordion-collapse collapse" data-bs-parent="#tarifsAccordion">
+          <div class="accordion-body">
+            <strong>Gestion hebdomadaire :</strong> 25 000 FCFA<br>
+            <strong>Gestion mensuelle :</strong> 75 000 à 150 000 FCFA
+          </div>
+        </div>
+      </div>
+       <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#video">
+            6. Quel est le tarif pour une réalisation multicaméra ?
+          </button>
+        </h2>
+        <div id="video" class="accordion-collapse collapse" data-bs-parent="#tarifsAccordion">
+          <div class="accordion-body">
+            <strong>Captation simple :</strong> 50 000 FCFA<br>
+            <strong>Événement complet :</strong> 100 000 FCFA et plus
+          </div>
+        </div>
+      </div>
+        <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#devis">
+            7. Peut-on demander un devis personnalisé ?
+          </button>
+        </h2>
+        <div id="devis" class="accordion-collapse collapse" data-bs-parent="#tarifsAccordion">
+          <div class="accordion-body">
+            Oui, vous pouvez demander un devis adapté à vos besoins et à votre budget.
+          </div>
+        </div>
+      </div>
+
     </div>
-    <div class="text-center">
-        <button class="btn btn-primary mb-5">Envoyer</button>
-    </div>
-</form>
-     </div>
   </div>
 </section>
 <footer class="bg-dark  text-white py-5">
