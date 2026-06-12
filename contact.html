@@ -96,35 +96,27 @@ rel="stylesheet">
     <div class="container">
     <div class="row">
 
-        <!-- FORMULAIRE -->
+       
         <div class="col-md-6 mb-4">
             <h4 class="fw-bold text-center">Envoyer un message</h4>
+            <form id="contactForm">
 
-            <form>
-                <div class="mb-3">
-                    <label class="form-label">Nom complet</label>
-                    <input type="text" class="form-control" placeholder="Votre nom">
-                </div>
+  <input type="text" id="name">
+  <small class="error" id="nameError"></small>
 
-                <div class="mb-3">
-                    <label class="form-label">Email</label>
-                    <input type="email" class="form-control" placeholder="Votre email">
-                </div>
+  <input type="email" id="email">
+  <small class="error" id="emailError"></small>
 
-                <div class="mb-3">
-                    <label class="form-label">Sujet</label>
-                    <input type="text" class="form-control" placeholder="Sujet du message">
-                </div>
+  <textarea id="message"></textarea>
+  <small class="error" id="messageError"></small>
 
-                <div class="mb-3">
-                    <label class="form-label">Message</label>
-                    <textarea class="form-control" rows="5" placeholder="Votre message"></textarea>
-                </div>
+  <button type="submit">Envoyer</button>
 
-                <button type="submit" class="btn btn-primary w-100">
-                    Envoyer le message
-                </button>
-            </form>
+</form>
+
+<p id="successMsg" class="text-success"></p>
+
+           
         </div>
 </section>
 <section>
@@ -132,7 +124,7 @@ rel="stylesheet">
             <h4 class="fw-bold text-center">Nos informations</h4>
 
             <p class="fst-italic"> Dakar, Sénégal</p>
-            <p class="fst-italic"> contact@afritalent.com</p>
+            <p class="fst-italic"> sambcode822@gmail.com</p>
             <p class="fst-italic"> +221 70 608 21 20 </p>
 
             <hr>
@@ -152,8 +144,7 @@ rel="stylesheet">
     </div>
 </div>
 </section>
-<!-- SECTION LOCALISATION -->
-<!-- SECTION LOCALISATION -->
+
 <section class="py-5">
   <div class="container">
     <h2 class="text-center fw-bold mb-4">Notre localisation</h2>
