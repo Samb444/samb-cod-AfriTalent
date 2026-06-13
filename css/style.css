@@ -1,6 +1,11 @@
-/* index html */
+/* 
+   IMPORT DES POLICES
+= */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@300;400&display=swap');
 
+/* 
+   VARIABLES GLOBALES
+*/
 :root {
   --primary-color: #0d6efd;
   --secondary-color: #0a58ca;
@@ -15,33 +20,47 @@
   --spacing: 1rem;
 }
 
+/* 
+   RESET GLOBAL
+ */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* 
+   STYLE GLOBAL DU BODY
+*/
 body {
   font-family: var(--font-text);
   background-color: var(--light-color);
   color: var(--text-color);
   line-height: 1.6;
-}
-#photo{
-    background-image: url(../images/bg.jpeg);
-    height: 100vh;
-    background-position: center;
-    background-size: cover;
-   background-repeat: no-repeat;
-   
+  font-size: 16px;
 }
 
+/* 
+   HERO / IMAGE BACKGROUND
+ */
+#photo {
+  background-image: url(../images/bg.jpeg);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
+/* 
+   TITRES
+ */
 h1, h2, h3, h4 {
   font-family: var(--font-title);
 }
 
-
+/* 
+   NAVBAR
+ */
 .navbar {
   padding: var(--spacing);
 }
@@ -53,17 +72,16 @@ h1, h2, h3, h4 {
 .navbar-nav .nav-link {
   margin-left: 15px;
   font-weight: 500;
-  color: var(--white) ;
+  color: var(--white);
 }
 
 .navbar-nav .nav-link:hover {
   color: var(--secondary-color);
 }
 
-
-
-
-/* Freelances*/
+/* 
+   SECTION GÉNÉRALE
+*/
 section.text-center {
   padding: 40px 0;
 }
@@ -72,23 +90,31 @@ section.text-center h1 {
   font-family: var(--font-title);
   font-size: 2.5rem;
 }
+
+/* 
+   CARD STYLE GLOBAL
+   (freelances / tarifs / contact)
+ */
 .card {
   border: none;
   border-radius: 10px;
   transition: 0.3s ease;
-  
 }
 
+/* hover global card */
 .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 5px 15px rgba(0,0,0,0.2);
   background: #0d6efd;
 }
 
+/* image card */
 .card img {
   height: 250px;
   object-fit: cover;
 }
+
+/* texte card */
 .card-body h4 {
   font-family: var(--font-title);
   margin-top: 10px;
@@ -97,6 +123,8 @@ section.text-center h1 {
 .card-body p {
   margin: 5px 0;
 }
+
+/* bouton card */
 .card .btn {
   background-color: var(--primary-color);
   border: none;
@@ -106,9 +134,7 @@ section.text-center h1 {
   background-color: var(--secondary-color);
 }
 
-
-/* Abouts */
-
+/* FOOTER */
 footer {
   background-color: var(--dark-color);
   color: var(--white);
@@ -123,69 +149,7 @@ footer ul li:hover {
   color: var(--secondary-color);
 }
 
-
-/* tarifs */
-
-section.text-center {
-  padding: 40px 0;
-}
-
-section.text-center h1 {
-  font-family: var(--font-title);
-}
-.card {
-  border: none;
-  border-radius: 10px;
-  transition: 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-  background: wheat;
-}
-
-.card h3 {
-  font-family: var(--font-title);
-}
-
-.card h2 {
-  margin: 10px 0;
-}
-.card .btn {
-  background-color: var(--primary-color);
-  border: none;
-}
-
-.card .btn:hover {
-  background-color: var(--secondary-color);
-}
-
-
-
-/* contact*/
-
-section h1 {
-  font-family: var(--font-title);
-}
-
-section p {
-  font-size: 16px;
-}
-.card {
-  border: none;
-  border-radius: 10px;
-  transition: 0.3s;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-}
-
-.card-body h4 {
-  font-family: var(--font-title);
-}
+/* CONTACT FORM */
 form {
   background-color: var(--white);
   padding: 20px;
@@ -200,6 +164,8 @@ form input,
 form textarea {
   border-radius: 5px;
 }
+
+/* boutons bootstrap override */
 .btn-primary {
   background-color: var(--primary-color);
   border: none;
@@ -208,6 +174,10 @@ form textarea {
 .btn-primary:hover {
   background-color: var(--secondary-color);
 }
+
+/*
+   UTILITAIRES
+ */
 .fst-italic {
   font-style: italic;
   margin-bottom: 5px;
@@ -216,6 +186,7 @@ form textarea {
 hr {
   margin: 15px 0;
 }
+
 .btn-outline-primary {
   margin: 5px;
   border-radius: 20px;
@@ -226,9 +197,7 @@ hr {
   color: var(--white);
 }
 
-
-/*  bento Grid */
-
+/* BENTO GRID (COMMENT CA MARCHE)*/
 .bento-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -248,13 +217,12 @@ hr {
   background: blue;
 }
 
+/* CATEGORIES DE SERVICES */
 .category-card {
   background: black;
   padding: 20px;
   border-radius: 10px;
   transition: 0.3s;
-
-
 }
 
 .category-card:hover {
@@ -263,52 +231,41 @@ hr {
   background: blue;
 }
 
+/* RESPONSIVE */
+@media (min-width: 768px) {
+  h1 {
+    font-size: 2.2rem;
+  }
 
-
-body{
-    font-size: 16px;
+  .hero {
+    padding: 80px 0;
+  }
 }
 
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 3rem;
+  }
 
-@media (min-width: 768px){
-    h1{
-        font-size: 2.2rem;
-    }
-
-    .hero{
-        padding: 80px 0;
-    }
+  .hero {
+    padding: 120px 0;
+  }
 }
 
-
-@media (min-width: 1200px){
-    h1{
-        font-size: 3rem;
-    }
-
-    .hero{
-        padding: 120px 0;
-    }
-}
-
-
-
-
-
-
+/*  DARK MODE */
 body.dark {
   background: #121212;
   color: white;
 }
 
-
+/* NAVBAR SCROLL EFFECT */
 .navbar.scrolled {
   background: wheat !important;
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
   transition: 0.3s;
 }
 
-
+/* BACK TO TOP BUTTON */
 #backToTop {
   position: fixed;
   bottom: 20px;
@@ -317,9 +274,7 @@ body.dark {
   z-index: 999;
 }
 
-
-    
-
+/* ANIMATION FADE IN */
 .fade-in {
   opacity: 0;
   transform: translateY(30px);

@@ -1,226 +1,296 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>AfriTalent — tarifs</title>
- <!-- Bootstrap 5 via CDN : feuille de style -->
- <link
-href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-rel="stylesheet">
- <!-- Votre feuille de style personnelle -->
- <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
- <!-- Le contenu de la page sera ajoute ici -->
-   <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-  <div class="container">
-    
-    <img src="images/logo copy.jpeg" width="80px" alt="logo">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>AfriTalent — Tarifs</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- CSS personnel -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- le contenu de la page s'ajoute ici--> 
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container">
+
+    <!-- Logo -->
+    <img src="images/logo-copy.jpeg" width="80" alt="logo AfriTalent">
+
+    <!-- Brand -->
     <a class="navbar-brand text-white fw-bold" href="index.html">AfriTalent</a>
 
+    <!-- Toggle -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
       <span class="navbar-toggler-icon"></span>
     </button>
 
+    <!-- Menu -->
     <div class="collapse navbar-collapse" id="navMenu">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link active" href="index.html">Accueil</a></li>
+
+        <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
         <li class="nav-item"><a class="nav-link" href="freelances.html">Freelances</a></li>
-        <li class="nav-item"><a class="nav-link" href="tarifs.html">Tarifs</a></li>
+        <li class="nav-item"><a class="nav-link active" href="tarifs.html">Tarifs</a></li>
         <li class="nav-item"><a class="nav-link" href="about.html">À propos</a></li>
         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-       <a href="index.html" class="btn btn primary bg-dark text-white p-1 rounded">
-      Réjoindre AfriTalent
-    </a>
+
+        <!-- Bouton -->
+        <li class="nav-item">
+          <a href="index.html" class="btn btn-dark text-white p-1 rounded">
+            Rejoindre AfriTalent
+          </a>
+        </li>
+
       </ul>
     </div>
 
   </div>
 </nav>
+
+<!-- HERO -->
 <section id="photo"></section>
-    <div class="container">
-        <h2 class=" fw-bold display-5 mb-3  text-center py-2">
-            La plateforme qui connecte les talents africains aux opportunités du monde
-        </h2>
-        <p class="text-center text-dark">
-            Trouvez les meilleurs freelances africains pour vos projets et développez votre entreprise
-        </p>
-        <div class="text-center">
-             <a href="freelances.html " class="bg-primary text-white p-2 rounded text-decoration-none me-3">Je suis Freelance</a> 
-             <button class="text-white bg-dark p-1 rounded">Je chercha un Freelance</button>
 
-        </div>
-        
+<section class="container">
 
-    </div>
-</section> 
-<section class="text-center my-5">
-    <h1>Nos Tarifs</h1>
-    <p class="text-muted">Choisissez l'offre qui vous correspond</p>
-</section>
-<div class="container">
-    <div class="row text-center">
-        <div class="col-md-6  col-12 col-lg-4 ">
-            <div class="card p-4">
-                <h3 class="fw-bold">Gratuit</h3>
-                <h2 class="text-primary">00 F CFA</h2>
-                <ul class="list-unstyled">
-                    <li> Accès limité</li>
-                    <li> Profil simple</li>
-                    <li> Pas de mise en avant</li>
-                </ul>
-                <a href="tarifs.html" class="btn p-1 rounded btn-primary">Choisir</a>
-            </div>
-        </div>
-        <div class="col-md-6  col-12 col-lg-4 ">
-            <div class="card p-4 border-primary">
-                <h3 class="fw-bold">PRO</h3>
-                <h2 class="text-primary">100000 FCFA</h2>
-                <ul class="list-unstyled">
-                    <li> Profil avancé</li>
-                    <li> Mise en avant</li>
-                    <li> Support prioritaire</li>
-                </ul>
-                <a href="tarifs.html" class="btn p-1 rounded btn-primary ">Choisir</a>
-            </div>
-        </div>
-        <div class="col-md-6  col-12 col-lg-4">
-            <div class="card p-4">
-                <h3 class="fw-bold">Entreprise</h3>
-                <h2 class="text-primary">200000 FCFA</h2>
-                <ul class="list-unstyled">
-                    <li> Visibilité maximale</li>
-                    <li> Accès complet</li>
-                    <li> Assistance 24/7</li>
-                </ul>
-                <a href="tarifs.html" class=" p-1 rounded btn btn-primary">Choisir</a>
-            </div>
-        </div>
-    </div>
-</div>
-    <div class="container py-5">
-    <h1 class="text-center mb-4">SOMMAIRE</h1>
-    <p class="text-center text-muted mb-5">
-      Consultez nos tarifs selon le service dont vous avez besoin.
-    </p>
+  <h2 class="fw-bold display-5 mb-3 text-center py-2">
+    La plateforme qui connecte les talents africains aux opportunités du monde
+  </h2>
 
-    <div class="accordion" id="tarifsAccordion">
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#web">
-            1. Combien coûte un site web ?
-          </button>
-        </h2>
-        <div id="web" class="accordion-collapse collapse show" data-bs-parent="#tarifsAccordion">
-          <div class="accordion-body">
-            <strong>Site vitrine :</strong> 50 000 à 150 000 FCFA<br>
-            <strong>Site e-commerce :</strong> 200 000 à 500 000 FCFA<br>
-            <strong>Site sur mesure :</strong> Sur devis
-          </div>
-        </div>
-      </div>
-     <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mobile">
-            2. Quel est le tarif pour une application mobile ?
-          </button>
-        </h2>
-        <div id="mobile" class="accordion-collapse collapse" data-bs-parent="#tarifsAccordion">
-          <div class="accordion-body">
-            <strong>Application simple :</strong> 100 000 à 300 000 FCFA<br>
-            <strong>Application avancée :</strong> 300 000 FCFA et plus
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#design">
-            3. Combien coûte un logo ou un design graphique ?
-          </button>
-        </h2>
-        <div id="design" class="accordion-collapse collapse" data-bs-parent="#tarifsAccordion">
-          <div class="accordion-body">
-            <strong>Logo simple :</strong> 10 000 à 25 000 FCFA<br>
-             <strong>Affiche/Flyer :</strong> 5 000 à 15 000 FCFA<br>
-            <strong>Pack identité visuelle :</strong> 30 000 FCFA et plus
-          </div>
-        </div>
-      </div>
-        <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#uiux">
-            4. Quel est le prix d’un design UI/UX ?
-          </button>
-        </h2>
-        <div id="uiux" class="accordion-collapse collapse" data-bs-parent="#tarifsAccordion">
-          <div class="accordion-body">
-            <strong>Maquette d’une page :</strong> 15 000 à 30 000 FCFA<br>
-            <strong>Prototype complet :</strong> 50 000 FCFA et plus
-          </div>
-        </div>
-      </div>
-        <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#community">
-            5. Combien coûte le community management ?
-          </button>
-        </h2>
-        <div id="community" class="accordion-collapse collapse" data-bs-parent="#tarifsAccordion">
-          <div class="accordion-body">
-            <strong>Gestion hebdomadaire :</strong> 25 000 FCFA<br>
-            <strong>Gestion mensuelle :</strong> 75 000 à 150 000 FCFA
-          </div>
-        </div>
-      </div>
-       <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#video">
-            6. Quel est le tarif pour une réalisation multicaméra ?
-          </button>
-        </h2>
-        <div id="video" class="accordion-collapse collapse" data-bs-parent="#tarifsAccordion">
-          <div class="accordion-body">
-            <strong>Captation simple :</strong> 50 000 FCFA<br>
-            <strong>Événement complet :</strong> 100 000 FCFA et plus
-          </div>
-        </div>
-      </div>
-        <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#devis">
-            7. Peut-on demander un devis personnalisé ?
-          </button>
-        </h2>
-        <div id="devis" class="accordion-collapse collapse" data-bs-parent="#tarifsAccordion">
-          <div class="accordion-body">
-            Oui, vous pouvez demander un devis adapté à vos besoins et à votre budget.
-          </div>
-        </div>
-      </div>
+  <p class="text-center text-dark">
+    Trouvez les meilleurs freelances africains pour vos projets et développez votre entreprise
+  </p>
 
-    </div>
+  <div class="text-center">
+    <a href="freelances.html" class="bg-primary text-white p-2 rounded text-decoration-none me-3">
+      Je suis Freelance
+    </a>
+
+    <button class="text-white bg-dark p-1 rounded">
+      Je cherche un Freelance
+    </button>
   </div>
+
 </section>
-<footer class="bg-dark  text-white py-5">
-        <ul class="text-center list-unstyled">
-            <li> Site internet</li>
-            <li>Référencement Web</li>
-            <li>Conseil digital</li>
-            <li>Politique de confidentialité</li>
-            <li>Devis & Contact</li>
+
+<!-- TITRE -->
+<section class="text-center my-5">
+  <h1>Nos Tarifs</h1>
+  <p class="text-muted">Choisissez l'offre qui vous correspond</p>
+</section>
+
+<!--- PRICING CARDS -->
+<div class="container">
+  <div class="row text-center">
+
+    <!-- GRATUIT -->
+    <div class="col-md-6 col-lg-4 col-12">
+      <div class="card p-4">
+        <h2 class="fw-bold">Gratuit</h2>
+        <h3 class="text-primary">0 F CFA</h3>
+
+        <ul class="list-unstyled">
+          <li>Accès limité</li>
+          <li>Profil simple</li>
+          <li>Pas de mise en avant</li>
         </ul>
-            <p class="text-white text-center">&copy; 2026 AfriTalent - Tous droits réservés</p>
+
+        <a href="tarifs.html" class="btn btn-primary">Choisir</a>
+      </div>
+    </div>
+
+    <!-- PRO -->
+    <div class="col-md-6 col-lg-4 col-12">
+      <div class="card p-4 border-primary">
+        <h3 class="fw-bold">PRO</h3>
+        <h2 class="text-primary">100 000 FCFA</h2>
+
+        <ul class="list-unstyled">
+          <li>Profil avancé</li>
+          <li>Mise en avant</li>
+          <li>Support prioritaire</li>
+        </ul>
+
+        <a href="tarifs.html" class="btn btn-primary">Choisir</a>
+      </div>
+    </div>
+
+    <!-- ENTREPRISE -->
+    <div class="col-md-6 col-lg-4 col-12">
+      <div class="card p-4">
+        <h3 class="fw-bold">Entreprise</h3>
+        <h2 class="text-primary">200 000 FCFA</h2>
+
+        <ul class="list-unstyled">
+          <li>Visibilité maximale</li>
+          <li>Accès complet</li>
+          <li>Assistance 24/7</li>
+        </ul>
+
+        <a href="tarifs.html" class="btn btn-primary">Choisir</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!--  FAQ ACCORDION -->
+<section class="container py-5">
+
+  <h1 class="text-center mb-4">SOMMAIRE</h1>
+
+  <p class="text-center text-muted mb-5">
+    Consultez nos tarifs selon le service dont vous avez besoin.
+  </p>
+
+  <div class="accordion" id="tarifsAccordion">
+
+    <!-- ITEM 1 -->
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#web">
+          1. Combien coûte un site web ?
+        </button>
+      </h2>
+
+      <div id="web" class="accordion-collapse collapse show" data-bs-parent="#tarifsAccordion">
+        <div class="accordion-body">
+          <strong>Site vitrine :</strong> 50 000 à 150 000 FCFA<br>
+          <strong>Site e-commerce :</strong> 200 000 à 500 000 FCFA<br>
+          <strong>Site sur mesure :</strong> Sur devis
+        </div>
+      </div>
+    </div>
+
+    <!-- ITEM 2 -->
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mobile">
+          2. Application mobile
+        </button>
+      </h2>
+
+      <div id="mobile" class="accordion-collapse collapse" data-bs-parent="#tarifsAccordion">
+        <div class="accordion-body">
+          Application simple : 100 000 à 300 000 FCFA<br>
+          Application avancée : 300 000 FCFA et +
+        </div>
+      </div>
+    </div>
+
+    <!-- ITEM 3 -->
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#design">
+          3. Design graphique
+        </button>
+      </h2>
+
+      <div id="design" class="accordion-collapse collapse" data-bs-parent="#tarifsAccordion">
+        <div class="accordion-body">
+          Logo : 10 000 à 25 000 FCFA<br>
+          Affiche : 5 000 à 15 000 FCFA<br>
+          Pack identité : 30 000 FCFA+
+        </div>
+      </div>
+    </div>
+
+    <!-- ITEM 4 -->
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#uiux">
+          4. UI/UX Design
+        </button>
+      </h2>
+
+      <div id="uiux" class="accordion-collapse collapse" data-bs-parent="#tarifsAccordion">
+        <div class="accordion-body">
+          Maquette : 15 000 à 30 000 FCFA<br>
+          Prototype : 50 000 FCFA+
+        </div>
+      </div>
+    </div>
+
+    <!-- ITEM 5 -->
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#community">
+          5. Community management
+        </button>
+      </h2>
+
+      <div id="community" class="accordion-collapse collapse" data-bs-parent="#tarifsAccordion">
+        <div class="accordion-body">
+          Hebdomadaire : 25 000 FCFA<br>
+          Mensuel : 75 000 à 150 000 FCFA
+        </div>
+      </div>
+    </div>
+
+    <!-- ITEM 6 -->
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#video">
+          6. Vidéo multicaméra
+        </button>
+      </h2>
+
+      <div id="video" class="accordion-collapse collapse" data-bs-parent="#tarifsAccordion">
+        <div class="accordion-body">
+          Captation : 50 000 FCFA<br>
+          Événement : 100 000 FCFA+
+        </div>
+      </div>
+    </div>
+
+    <!-- ITEM 7 -->
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#devis">
+          7. Devis personnalisé
+        </button>
+      </h2>
+
+      <div id="devis" class="accordion-collapse collapse" data-bs-parent="#tarifsAccordion">
+        <div class="accordion-body">
+          Oui, devis adapté selon votre projet et budget.
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<!--  FOOTER -->
+<footer class="bg-dark text-white py-5">
+
+  <ul class="text-center list-unstyled">
+    <li>Site internet</li>
+    <li>Référencement Web</li>
+    <li>Conseil digital</li>
+    <li>Politique de confidentialité</li>
+    <li>Devis & Contact</li>
+  </ul>
+
+  <p class="text-center">&copy; 2026 AfriTalent - Tous droits réservés</p>
+
 </footer>
+
+<!-- Boutons -->
 <button id="backToTop" class="btn btn-dark">↑</button>
 <button id="themeToggle" class="btn btn-light">🌙</button>
 
- <!-- Bootstrap 5 via CDN : script JavaScript -->
- <script
-src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-></script>
- <!-- Votre script JavaScript -->
- <script src="js/main.js"></script>
- </body>
- </html>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- JS -->
+<script src="js/main.js"></script>
+
+</body>
+</html>

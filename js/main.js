@@ -1,13 +1,18 @@
+/* 
+   THEME DARK / LIGHT
+ */
+
 const toggle = document.getElementById("themeToggle");
 const body = document.body;
 
-
 if (toggle) {
 
+  // appliquer le thème sauvegardé
   if (localStorage.getItem("theme") === "dark") {
     body.classList.add("dark");
   }
 
+  // toggle du thème
   toggle.addEventListener("click", () => {
     body.classList.toggle("dark");
 
@@ -19,6 +24,10 @@ if (toggle) {
   });
 }
 
+
+/* 
+   NAVBAR SCROLL EFFECT
+ */
 
 const navbar = document.querySelector(".navbar");
 
@@ -33,11 +42,15 @@ if (navbar) {
 }
 
 
+/* 
+   BACK TO TOP BUTTON
+ */
 
 const topBtn = document.getElementById("backToTop");
 
 if (topBtn) {
 
+  // affichage bouton au scroll
   window.addEventListener("scroll", () => {
     if (window.scrollY > 200) {
       topBtn.style.display = "block";
@@ -46,6 +59,7 @@ if (topBtn) {
     }
   });
 
+  // retour en haut smooth
   topBtn.addEventListener("click", () => {
     window.scrollTo({
       top: 0,
@@ -55,6 +69,7 @@ if (topBtn) {
 }
 
 
+/* ANIMATION FADE-IN */
 
 const fadeElements = document.querySelectorAll(".fade-in");
 
@@ -62,10 +77,12 @@ if (fadeElements.length > 0) {
 
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
+
       if (entry.isIntersecting) {
         entry.target.classList.add("show");
-        observer.unobserve(entry.target); 
+        observer.unobserve(entry.target);
       }
+
     });
   });
 
@@ -73,6 +90,7 @@ if (fadeElements.length > 0) {
 }
 
 
+/* COUNTER ANIMATION */
 
 const counters = document.querySelectorAll(".counter");
 
@@ -80,6 +98,7 @@ if (counters.length > 0) {
 
   const counterObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
+
       if (entry.isIntersecting) {
 
         const counter = entry.target;
@@ -102,6 +121,7 @@ if (counters.length > 0) {
         update();
         counterObserver.unobserve(counter);
       }
+
     });
   });
 
@@ -109,6 +129,7 @@ if (counters.length > 0) {
 }
 
 
+/* YEAR AUTO FOOTER */
 
 const year = document.getElementById("year");
 
@@ -116,7 +137,8 @@ if (year) {
   year.textContent = new Date().getFullYear();
 }
 
-/* js filtrage freelance*/
+
+/*  FILTRAGE Fr */
 
 const filterButtons = document.querySelectorAll(".filter-btn");
 const items = document.querySelectorAll(".freelance-item");
@@ -130,8 +152,7 @@ filterButtons.forEach(btn => {
 
       if (filter === "all") {
         item.style.display = "block";
-      } 
-      else {
+      } else {
         if (item.classList.contains(filter)) {
           item.style.display = "block";
         } else {
@@ -144,7 +165,8 @@ filterButtons.forEach(btn => {
   });
 });
 
- /* js formulaire*/  
+
+/*  FORMULAIRE CONTACT */
 
 const form = document.getElementById("contactForm");
 
@@ -164,35 +186,40 @@ if (form) {
     const messageError = document.getElementById("messageError");
     const successMsg = document.getElementById("successMsg");
 
+    // reset messages
+
     nameError.textContent = "";
     emailError.textContent = "";
     messageError.textContent = "";
     successMsg.textContent = "";
 
-    
+    // validation nom
+
     if (name.value.trim() === "") {
       nameError.textContent = "Le nom est obligatoire";
       valid = false;
     }
 
-    
+    // validation email
+
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     if (email.value.trim() === "") {
       emailError.textContent = "Email obligatoire";
       valid = false;
-    } 
-    else if (!emailRegex.test(email.value)) {
+    } else if (!emailRegex.test(email.value)) {
       emailError.textContent = "Email invalide";
       valid = false;
     }
+
+    // validation message
 
     if (message.value.trim().length < 20) {
       messageError.textContent = "Le message doit contenir au moins 20 caractères";
       valid = false;
     }
 
-    
+    // succès
     if (valid) {
       successMsg.textContent = "Message envoyé avec succès ✔";
       form.reset();
