@@ -43,14 +43,32 @@ body {
 /* 
    HERO / IMAGE BACKGROUND
  */
-#photo {
-  background-image: url(../images/bg.jpeg);
+.hero {
   height: 100vh;
-  background-position: center;
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
 }
-
+.hero.home {
+  background-image: url("../images/bg.jpeg");
+}
+.hero.freelances {
+  background-image: url("../images/bg1.jpeg");
+}
+.hero.about {
+  background-image: url("../images/tarifshero.jpeg");
+}
+.hero.contact {
+  background-image: url("../images/contacthero.jpeg");
+}
+.hero.tarifs {
+  background-image: url("../images/abouthero.jpeg");
+}
 /* 
    TITRES
  */
